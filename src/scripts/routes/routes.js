@@ -1,5 +1,5 @@
-import RestaurantDetail from '../views/pages/restaurant-detail';
-import Index from '../views/pages';
+import RestaurantDetail from '../views/pages/detail';
+import Index from '../views/pages/home';
 import FavoriteRestaurant from '../views/pages/favorite-restaurant';
 
 const routes = {

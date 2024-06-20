@@ -1,11 +1,11 @@
-import FavoriteRestaurantIndexDB from '../../data/favorite-restaurant-index-d-b';
+import FavoriteRestaurantIndexDB from '../../data/favorite-restaurantidb';
 import { createItemRestaurant } from '../templates/template-creator';
 
 const FavoriteRestaurant = {
   async render() {
     return `
       <section id="restaurant" tabindex="0" >
-          <h1 tabindex="0">Your favorite restaurant list</h1>
+          <h1 tabindex="0">Daftar Resto Favorite</h1>
           <section class="restaurant__list">
           </section>
       </section>
@@ -17,7 +17,7 @@ const FavoriteRestaurant = {
 
     if (restaurant.length === 0) {
       restaurantContainer.innerHTML
-        += "<p style='color:red;'>You do not have a list of favorite restaurants yet</p>";
+        += "<p style='color:red;'>Anda belum memiliki daftar restoran favorit?</p>";
     }
     restaurant.forEach((restaurants) => {
       restaurantContainer.innerHTML += createItemRestaurant(restaurants);

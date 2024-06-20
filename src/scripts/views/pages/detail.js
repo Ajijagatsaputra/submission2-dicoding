@@ -1,4 +1,4 @@
-import RestaurantSource from '../../data/restaurant-source';
+import RestaurantSource from '../../data/restaurantidb-source';
 import UrlParser from '../../routes/url-parser';
 import { createDetailRestaurant } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
@@ -11,7 +11,6 @@ const RestaurantDetail = {
     <div id="LikeContainer"></div>`;
   },
   async afterRender() {
-    // This function will be called after render()
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const restaurant = await RestaurantSource.detailRestaurant(url.id);
     const main = document.querySelector('.restaurant__detail');

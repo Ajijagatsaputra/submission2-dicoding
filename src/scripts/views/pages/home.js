@@ -1,4 +1,4 @@
-import RestaurantSource from '../../data/restaurant-source';
+import RestaurantSource from '../../data/restaurantidb-source';
 import { createItemRestaurant } from '../templates/template-creator';
 
 const Index = {

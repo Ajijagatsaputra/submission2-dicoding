@@ -1,12 +1,10 @@
-import 'regenerator-runtime'; /* for async await transpile */
+import 'regenerator-runtime';
 import '../styles/main.scss';
 import '../styles/responsive.scss';
 import swRegister from './utils/sw-register';
 import App from './views/app';
-// import LikeButtonInitiator from './utils/like-button-initiator';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // eslint-disable-next-line no-unused-vars
   const app = new App({
     button: document.querySelector('.hamburger'),
     drawer: document.querySelector('.nav__menu'),
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   window.addEventListener('load', () => {
     swRegister();
-    // LikeButtonInitiator();
     app.renderPage();
   });
 });

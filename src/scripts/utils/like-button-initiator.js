@@ -1,4 +1,4 @@
-import FavoriteRestaurantIndexDB from '../data/favorite-restaurant-index-d-b';
+import FavoriteRestaurantIndexDB from '../data/favorite-restaurantidb';
 import {
   createLikeButtonTemplate,
   createLikedButtonTemplate,
